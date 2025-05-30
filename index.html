@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my professional portfolio website showcasing my skills, projects, and experience in web development and design.">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://formspree.io">
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="preload" href="https://res.cloudinary.com/dgqequjgk/image/upload/v1746396663/SAVE_%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A1%D9%A0%D9%A1_%D9%A2%D9%A0%D9%A4%D9%A1%D9%A1%D9%A7_dfvhad.jpg" as="image">
+    <link rel="preload" href="https://res.cloudinary.com/dgqequjgk/image/upload/v1746396680/pexels-harold-vasquez-853421-2653362_lxcjdp.jpg" as="image">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.js" as="script">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+</head>
+<body class="bg-slate-900 text-slate-100">
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full py-4 px-6 backdrop-blur-md z-50" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text" aria-label="Home">A.S</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8" role="menubar">
+                <a href="#home" class="nav-link text-slate-100" role="menuitem">Home</a>
+                <a href="#about" class="nav-link text-slate-100" role="menuitem">About</a>
+                <a href="#projects" class="nav-link text-slate-100" role="menuitem">Projects</a>
+                <a href="#skills" class="nav-link text-slate-100" role="menuitem">Skills</a>
+                <a href="#contact" class="nav-link text-slate-100" role="menuitem">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-xl text-slate-100" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu md:hidden text-center mt-4" role="menu" aria-labelledby="menuBtn">
+            <a href="#home" class="nav-link block py-2 text-slate-100" role="menuitem">Home</a>
+            <a href="#about" class="nav-link block py-2 text-slate-100" role="menuitem">About</a>
+            <a href="#projects" class="nav-link block py-2 text-slate-100" role="menuitem">Projects</a>
+            <a href="#skills" class="nav-link block py-2 text-slate-100" role="menuitem">Skills</a>
+            <a href="#contact" class="nav-link block py-2 text-slate-100" role="menuitem">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 px-6 relative overflow-hidden">
+        <!-- Particle Background -->
+        <div class="particles" id="particles"></div>
+        
+        <div class="max-w-7xl mx-auto" data-aos="fade-up">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="hero-content flex-1">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        Hi, I'm <span class="typing-container">
+                            <span class="gradient-text typing-text"></span>
+                            <span class="typing-cursor"></span>
+                        </span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-400 mb-8">
+                         I’m passionate about web design and data analysis.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#contact" class="btn-primary group">
+                            <span>Contact Me</span>
+                            <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                        <a href="#projects" class="btn-secondary group">
+                            <span>View Work</span>
+                            <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-8 md:mt-0 flex justify-center md:justify-end">
+                    <div class="hero-image">
+                        <img src="assets/Home_img.jpg"
+                             alt="Profile" 
+                             class="rounded-2xl w-full max-w-md border-4 border-slate-800 md:ml-10"
+                             data-aos="zoom-in"
+                             loading="eager"
+                             width="800"
+                             height="800">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+            <span class="text-sm text-slate-400">Scroll to explore</span>
+        </div>
+    </section>
+    <!-- About Section -->
+<section id="about" class="py-20 px-6 bg-slate-800/50 overflow-hidden">
+    <div class="max-w-7xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center gradient-text" data-aos="fade-down">
+            About Me
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center relative">
+            <!-- Text Content -->
+            <div class="space-y-6" data-aos="fade-right" data-aos-delay="200">
+                <p class="text-lg md:text-xl text-slate-300 leading-relaxed">
+                    I'm Alaa Salhany, a Management Information Systems graduate with a passion for web design, data analysis, and digital creativity
+                </p>
+                <p class="text-lg md:text-xl text-slate-300 leading-relaxed">
+                    I enjoy building clean, user-friendly websites, turning data into insights, and exploring the power of marketing and media. I'm always curious to learn more, grow my skills, and create meaningful digital experiences.
+                </p>
+                
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+    <div class="group cursor-pointer flex items-center p-4 bg-slate-800/80 backdrop-blur rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-slate-700/80" data-aos="fade-up">
+        <i class="fas fa-chart-bar text-primary mr-3 text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="text-slate-300 font-medium">Data Visualization</span>
+    </div>
+    <div class="group cursor-pointer flex items-center p-4 bg-slate-800/80 backdrop-blur rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-slate-700/80" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-chart-line text-primary mr-3 text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="text-slate-300 font-medium">Statistical Analysis</span>
+    </div>
+    <div class="group cursor-pointer flex items-center p-4 bg-slate-800/80 backdrop-blur rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-slate-700/80" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-broom text-primary mr-3 text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="text-slate-300 font-medium">Data Cleaning</span>
+    </div>
+    <div class="group cursor-pointer flex items-center p-4 bg-slate-800/80 backdrop-blur rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-slate-700/80" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-file-alt text-primary mr-3 text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="text-slate-300 font-medium">Insights & Reporting</span>
+    </div>
+</div>
+
+                
+            </div>
+
+            <!-- Image with enhanced styling -->
+            <div class="relative ml-auto w-full max-w-[600px] transform translate-x-0 md:translate-x-4" data-aos="fade-left" data-aos-delay="400">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 blur-3xl rounded-full"></div>
+                <div class="relative bg-gradient-to-br from-primary to-secondary p-1 rounded-2xl transform hover:scale-[1.02] transition-all duration-500 shadow-xl hover:shadow-2xl">
+                    <img src="assets/About _img.jpg"
+                         alt="About" 
+                         class="rounded-2xl w-full border-4 border-slate-800/50 transition-transform duration-500"
+                         loading="lazy"
+                         width="800"
+                         height="600">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-slate-800/50 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center gradient-text" data-aos="fade-up">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Project 1 -->
+                <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="assets/Forex_Calculator.png"
+                             alt="Project" 
+                             class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                             loading="lazy"
+                             width="800"
+                             height="450">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-100">FOREX-CALCULATOR </h3>
+                    <p class="text-slate-300 mb-6"> A responsive Forex calculator for real-time currency conversions.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">HTML</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">CSS</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">JS</span>
+                    </div>
+                    <a href="https://alaasalhany.github.io/FOREX-CALCULATOR/" 
+                       target="_blank" 
+                       class="inline-flex items-center btn-primary group-hover:shadow-lg">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="assets/coffe shop.png"
+                             alt="Project" 
+                             class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                             loading="lazy"
+                             width="800"
+                             height="450">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-100">CupCost</h3>
+                    <p class="text-slate-300 mb-6">Smart coffee order interface with live pricing and smooth user interaction</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">HTML</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">CSS</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">JS</span>
+                    </div>
+                    <a href="https://alaasalhany.github.io/CupCost/" 
+                       target="_blank" 
+                       class="inline-flex items-center btn-primary group-hover:shadow-lg">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="assets/TRAVEL-WEB-SİTE.png"
+                             alt="Project" 
+                             class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                             loading="lazy"
+                             width="800"
+                             height="450">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-100">Travel Agency=</h3>
+                    <p class="text-slate-300 mb-6">Modern travel site with trip listings, booking, and smooth user experience.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">HTML</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">CSS</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">Bootstrap</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">JS</span>
+                    </div>
+                    <a href="https://alaasalhany.github.io/TravelAgency/" 
+                       target="_blank" 
+                       class="inline-flex items-center btn-primary group-hover:shadow-lg">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="assets/TravelLikeMe.2pdf.png"
+                             alt="Project" 
+                             class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                             loading="lazy"
+                             width="800"
+                             height="450">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-100">TravelLikeMe </h3>
+                    <p class="text-slate-300 mb-6">Influencer-inspired travel app with focus on UX and digital strategy.</p>
+                   
+                    <a href="https://drive.google.com/file/d/1NSNfhnyF3mqmzl065vQWQAjIbMHWdIca/view?usp=sharing" 
+                       target="_blank" 
+                       class="inline-flex items-center btn-primary group-hover:shadow-lg">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                <!-- Project 5 -->
+                <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1746396631/screely-1740003123790_gk4tcz.png"
+                             alt="Project" 
+                             class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                             loading="lazy"
+                             width="800"
+                             height="450">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-100">BI-ShopıngTrend </h3>
+                    <p class="text-slate-300 mb-6">Shoes Marketplace With HTML, CSS, and JS</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">HTML</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">CSS</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">JS</span>
+                    </div>
+                    <a href="https://fahmyintech.github.io/Nike-shop/" 
+                       target="_blank" 
+                       class="inline-flex items-center btn-primary group-hover:shadow-lg">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+            </div>
+             <div class="mt-8 flex justify-center space-x-4" id="project-pagination-buttons" style="display: none;">
+                <button id="prevButton" class="btn-secondary" style="display: none;">⬅ Previous</button>
+                <button id="nextButton" class="btn-secondary" style="display: none;">Next ➡</button>
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 px-6 bg-gradient-to-b from-slate-900 to-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">What People Say</h2>
+            
+            <!-- Testimonials Carousel -->
+            <div class="relative">
+                <!-- Navigation Arrows -->
+                <button class="carousel-nav carousel-prev hidden md:block" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav carousel-next hidden md:block" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Carousel Container -->
+                <div class="testimonials-carousel overflow-x-auto snap-x snap-mandatory scrollbar-hide touch-pan-x">
+                    <div class="flex gap-6">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center">
+                            <div class="bg-slate-800/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-700 h-full">
+                                <div class="flex items-start mb-6">
+                                    <div class="relative">
+                                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                                            JD
+                                        </div>
+                                        <div class="absolute -bottom-1 -right-1 bg-slate-800 rounded-full p-1">
+                                            <i class="fas fa-quote-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h3 class="font-bold text-lg">Omar Khaled</h3>
+                                        <p class="text-sm text-slate-400">Project Manager</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-300 mb-6 italic">"Fahmy delivered exceptional results. His attention to detail and technical expertise made our project a success."</p>
+                                <div class="flex gap-1 text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center">
+                            <div class="bg-slate-800/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-700 h-full">
+                                <div class="flex items-start mb-6">
+                                    <div class="relative">
+                                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                                            AS
+                                        </div>
+                                        <div class="absolute -bottom-1 -right-1 bg-slate-800 rounded-full p-1">
+                                            <i class="fas fa-quote-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h3 class="font-bold text-lg">Layla Hassan</h3>
+                                        <p class="text-sm text-slate-400">Startup Founder</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-300 mb-6 italic">"Working with Fahmy was a pleasure. He brought our vision to life with modern and clean code."</p>
+                                <div class="flex gap-1 text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center">
+                            <div class="bg-slate-800/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-700 h-full">
+                                <div class="flex items-start mb-6">
+                                    <div class="relative">
+                                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                                            MJ
+                                        </div>
+                                        <div class="absolute -bottom-1 -right-1 bg-slate-800 rounded-full p-1">
+                                            <i class="fas fa-quote-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h3 class="font-bold text-lg">Ahmed Zaki</h3>
+                                        <p class="text-sm text-slate-400">Lead Developer</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-300 mb-6 italic">"Fahmy's code quality and problem-solving skills are impressive. A great addition to any development team."</p>
+                                <div class="flex gap-1 text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center">
+                            <div class="bg-slate-800/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-700 h-full">
+                                <div class="flex items-start mb-6">
+                                    <div class="relative">
+                                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-2xl">
+                                            MJ
+                                        </div>
+                                        <div class="absolute -bottom-1 -right-1 bg-slate-800 rounded-full p-1">
+                                            <i class="fas fa-quote-right text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h3 class="font-bold text-lg">Sara Mostafa</h3>
+                                        <p class="text-sm text-slate-400">Software Engineer</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-300 mb-6 italic">"Fahmy's code quality and problem-solving skills are impressive. A great addition to any development team."</p>
+                                <div class="flex gap-1 text-primary">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Dots -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="carousel-dot active" aria-label="Go to testimonial 1"></button>
+                    <button class="carousel-dot" aria-label="Go to testimonial 2"></button>
+                    <button class="carousel-dot" aria-label="Go to testimonial 3"></button>
+                    <button class="carousel-dot" aria-label="Go to testimonial 4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">Technical Skills</h2>
+            
+            <!-- Download Resume Button -->
+            <div class="text-center mb-12" data-aos="fade-up">
+                <a href="assets/ALAA SALHANI_Resume.pdf" target="_blank" class="btn-primary inline-flex items-center gap-2">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- HTML5 -->
+                <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up">
+                    <i class="fab fa-html5 text-5xl text-[#E34F26] mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold">HTML5</h3>
+                    <p class="text-sm text-slate-400 mt-2">Advanced</p>
+                </div>
+                
+                <!-- CSS3 -->
+                <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="100">
+                    <i class="fab fa-css3-alt text-5xl text-[#1572B6] mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold">CSS3</h3>
+                    <p class="text-sm text-slate-400 mt-2">Advanced</p>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="200">
+                    <i class="fab fa-js-square text-5xl text-[#F7DF1E] mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold">JavaScript</h3>
+                    <p class="text-sm text-slate-400 mt-2">Advanced</p>
+                </div>
+                
+                <!-- SQL -->
+                <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="300">
+                            <i class="fas fa-database text-5xl text-[#00758F] mb-4 group-hover:scale-110 transition-transform"></i>
+
+                    <h3 class="font-bold">SQL</h3>
+                    <p class="text-sm text-slate-400 mt-2">Learning</p>
+                </div>
+                
+                <!-- BI -->
+                <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="400">
+                            <i class="fas fa-chart-line text-5xl text-[#4CAF50] mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="font-bold">BI</h3>
+                    <p class="text-sm text-slate-400 mt-2">Intermediate</p>
+                </div>
+                <!-- PHP  -->
+                <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="400">
+                            <i class="fab fa-php text-5xl text-[#777BB4] mb-4 group-hover:scale-110 transition-transform"></i>
+
+                    <h3 class="font-bold">PHP</h3>
+                    <p class="text-sm text-slate-400 mt-2">Intermediate</p>
+                </div>
+       
+  
+
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto" data-aos="fade-up">
+            <h2 class="text-3xl font-bold mb-12 text-center gradient-text">Get in Touch</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <!-- Contact Card -->
+                    <div class="contact-card rounded-2xl p-8">
+                        <h3 class="text-xl font-semibold mb-8 text-primary">Contact Information</h3>
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-4">
+                                <div class="contact-icon w-14 h-14 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-400 mb-1">Email</p>
+                                    <a href="mailto:your.email@example.com" class="text-slate-100 hover:text-primary transition-colors">alaa.salhani@bilgiedu.net</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="contact-icon w-14 h-14 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-400 mb-1">Location</p>
+                                    <p class="text-slate-100">Istanbul,Turkey </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="contact-icon w-14 h-14 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-400 mb-1">Phone</p>
+                                    <a href="tel:+201234567890" class="text-slate-100 hover:text-primary transition-colors">+905012518414</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="contact-card rounded-2xl p-8">
+                        <h3 class="text-xl font-semibold mb-8 text-primary">Connect With Me</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="#" target="_blank" 
+                               class="social-icon rounded-xl p-4 flex items-center justify-center gap-3">
+                                <i class="fab fa-twitter text-xl text-slate-100"></i>
+                                <span class="text-slate-100 font-medium">Twitter</span>
+                            </a>
+                            <a href="#" target="_blank" 
+                               class="social-icon rounded-xl p-4 flex items-center justify-center gap-3">
+                                <i class="fab fa-instagram text-xl text-slate-100"></i>
+                                <span class="text-slate-100 font-medium">Instagram</span>
+                            </a>
+                            <a href="http://www.linkedin.com/in/alaa-salhany-781b0723b" target="_blank" 
+                               class="social-icon rounded-xl p-4 flex items-center justify-center gap-3">
+                                <i class="fab fa-linkedin text-xl text-slate-100"></i>
+                                <span class="text-slate-100 font-medium">LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/alaasalhany" target="_blank" 
+                               class="social-icon rounded-xl p-4 flex items-center justify-center gap-3">
+                                <i class="fab fa-github text-xl text-slate-100"></i>
+                                <span class="text-slate-100 font-medium">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-card rounded-2xl p-8">
+                    <h3 class="text-xl font-semibold mb-8 text-primary">Send Me a Message</h3>
+                    <form 
+                        action="https://formspree.io/f/xwpvqzkw" 
+                        method="POST"
+                        class="space-y-6"
+                        id="contactForm"
+                    >
+                        <input type="hidden" name="_next" value="https://fahmyomara.netlify.app/success.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission">
+                        <input type="text" name="_gotcha" style="display: none">
+                       
+                        <div class="form-field">
+                            <input 
+                                type="text" 
+                                id="name"
+                                name="name" 
+                                placeholder="Enter your name" 
+                                class="w-full p-3 bg-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-slate-100"
+                                required
+                                aria-required="true"
+                                minlength="2"
+                                maxlength="50"
+                                pattern="[A-Za-z\s]+"
+                                title="Please enter a valid name (letters and spaces only)"
+                            >
+                            <label for="name">Your Name</label>
+                            <p class="error-message" id="nameError">Please enter a valid name</p>
+                        </div>
+        
+                        <div class="form-field">
+                            <input 
+                                type="email" 
+                                id="email"
+                                name="email" 
+                                placeholder="Enter your email" 
+                                class="w-full p-3 bg-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-slate-100"
+                                required
+                                aria-required="true"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                title="Please enter a valid email address"
+                            >
+                            <label for="email">Your Email</label>
+                            <p class="error-message" id="emailError">Please enter a valid email address</p>
+                        </div>
+        
+                        <div class="form-field">
+                            <textarea 
+                                id="message"
+                                name="message" 
+                                rows="5" 
+                                placeholder="Enter your message" 
+                                class="w-full p-3 bg-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary text-slate-100 resize-none"
+                                required
+                                aria-required="true"
+                                minlength="10"
+                                maxlength="500"
+                            ></textarea>
+                            <label for="message">Your Message</label>
+                            <p class="error-message" id="messageError">Please enter a message (minimum 10 characters)</p>
+                        </div>
+        
+                        <button 
+                            type="submit" 
+                            class="submit-btn btn-primary w-full flex items-center justify-center gap-2"
+                            id="submitButton"
+                        >
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <!-- Loading State -->
+                        <div class="hidden" id="loadingState">
+                            <div class="flex items-center justify-center gap-2 text-primary">
+                                <i class="fas fa-spinner loading-spinner"></i>
+                                <span>Sending your message...</span>
+                            </div>
+                        </div>
+
+                        <!-- Success Message -->
+                        <div class="hidden" id="successMessage">
+                            <div class="flex items-center justify-center gap-2 text-green-400">
+                                <i class="fas fa-check-circle success-icon"></i>
+                                <span>Message sent successfully!</span>
+                            </div>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div class="hidden" id="errorMessage">
+                            <div class="flex items-center justify-center gap-2 text-red-400">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span>Something went wrong. Please try again later.</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+   <!-- Footer -->
+<footer class="footer py-12">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-primary">Navigation</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="footer-link text-slate-300 hover:text-primary">Home</a></li>
+                    <li><a href="#about" class="footer-link text-slate-300 hover:text-primary">About</a></li>
+                    <li><a href="#projects" class="footer-link text-slate-300 hover:text-primary">Projects</a></li>
+                    <li><a href="#skills" class="footer-link text-slate-300 hover:text-primary">Skills</a></li>
+                    <li><a href="#contact" class="footer-link text-slate-300 hover:text-primary">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-primary">Resources</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-file-pdf text-primary"></i>
+                        <a href="https://fahmyintech.github.io/FahmyPortfolio-/Eng_Fahmy_cv.pdf" target="_blank" class="footer-link text-slate-300 hover:text-primary">Download Resume</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-github text-primary"></i>
+                        <a href="https://github.com/FahmyInTech" target="_blank" class="footer-link text-slate-300 hover:text-primary">GitHub Profile</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-linkedin text-primary"></i>
+                        <a href="https://www.linkedin.com/in/fahmy-omara" target="_blank" class="footer-link text-slate-300 hover:text-primary">LinkedIn Profile</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-code text-primary"></i>
+                        <a href="#projects" class="footer-link text-slate-300 hover:text-primary">View Projects</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-primary">Stay Updated</h3>
+                <p class="text-slate-300 mb-4">Subscribe to receive updates about new projects and articles.</p>
+                <form class="flex flex-col gap-3">
+                    <input type="email" placeholder="Your email" 
+                           class="w-full p-2 rounded-lg bg-slate-800/50 border border-slate-700 text-slate-100 focus:outline-none focus:ring-2 focus:ring-primary"
+                           required>
+                    <button type="submit" 
+                            class="group w-full px-4 py-2.5 bg-gradient-to-r from-primary via-primary/90 to-secondary text-white rounded-lg 
+                                   hover:from-primary/90 hover:via-primary/80 hover:to-secondary/90 
+                                   transition-all duration-300 ease-in-out
+                                   transform hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/20
+                                   active:scale-[0.98] active:shadow-md
+                                   focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-slate-900
+                                   relative overflow-hidden">
+                        <span class="relative z-10 flex items-center justify-center gap-2">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane transform transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-12"></i>
+                        </span>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 
+                                    opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 
+                                    opacity-0 group-active:opacity-100 transition-opacity duration-200"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-700 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-sm">&copy; 2025 Fahmy Omara. All rights reserved.</p>
+                <div class="flex gap-4 text-sm">
+                    <a href="#" class="footer-link text-slate-400 hover:text-primary">Privacy Policy</a>
+                    <a href="#" class="footer-link text-slate-400 hover:text-primary">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up text-white"></i>
+    </button>
+
+    <!-- Required Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>
+        // Initialize AOS with optimized settings
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                offset: 120,
+                once: true,
+                disable: 'mobile'
+            });
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const menuIcon = menuBtn.querySelector('i');
+            menuIcon.classList.toggle('fa-bars');
+            menuIcon.classList.toggle('fa-times');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                menuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // Close mobile menu after click
+                if (mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.remove('active');
+                    menuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
+                }
+            });
+        });
+
+        // Project card hover effects
+        const projectItems = document.querySelectorAll('.project-item');
+        projectItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.classList.add('scale-105', 'shadow-2xl');
+            });
+            item.addEventListener('mouseleave', () => {
+                item.classList.remove('scale-105', 'shadow-2xl');
+            });
+        });
+
+        // Button ripple effect
+        const buttons = document.querySelectorAll('.btn-primary, .btn-secondary');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const circle = document.createElement('span');
+                circle.className = 'ripple';
+                circle.style.left = `${e.offsetX}px`;
+                circle.style.top = `${e.offsetY}px`;
+                this.appendChild(circle);
+                setTimeout(() => circle.remove(), 600);
+            });
+        });
+
+        // Testimonials Carousel
+        const carousel = document.querySelector('.testimonials-carousel');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const prevBtn = document.querySelector('.carousel-prev');
+        const nextBtn = document.querySelector('.carousel-next');
+        let currentIndex = 0;
+        let autoScrollInterval;
+        let isHovering = false;
+
+        function updateCarousel() {
+            const cardWidth = carousel.querySelector('.testimonial-card').offsetWidth;
+            carousel.scrollTo({
+                left: currentIndex * cardWidth,
+                behavior: 'smooth'
+            });
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function startAutoScroll() {
+            if (!isHovering) {
+                autoScrollInterval = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % dots.length;
+                    updateCarousel();
+                }, 5000);
+            }
+        }
+
+        function stopAutoScroll() {
+            clearInterval(autoScrollInterval);
+        }
+
+        // Handle dot clicks
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+            });
+        });
+
+        // Handle arrow clicks
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + dots.length) % dots.length;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % dots.length;
+            updateCarousel();
+        });
+
+        // Handle hover states
+        carousel.addEventListener('mouseenter', () => {
+            isHovering = true;
+            stopAutoScroll();
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+            isHovering = false;
+            startAutoScroll();
+        });
+
+        // Handle touch events
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            stopAutoScroll();
+        });
+
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+            startAutoScroll();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left
+                    currentIndex = (currentIndex + 1) % dots.length;
+                } else {
+                    // Swipe right
+                    currentIndex = (currentIndex - 1 + dots.length) % dots.length;
+                }
+                updateCarousel();
+            }
+        }
+
+        // Start auto-scroll
+        startAutoScroll();
+
+        // Form validation and submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            document.getElementById('loadingState').classList.remove('hidden');
+            document.getElementById('submitButton').classList.add('hidden');
+            
+            // Validate form
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+            let isValid = true;
+
+            // Name validation
+            if (!name.value.match(/^[A-Za-z\s]+$/)) {
+                document.getElementById('nameError').classList.add('visible');
+                isValid = false;
+            } else {
+                document.getElementById('nameError').classList.remove('visible');
+            }
+
+            // Email validation
+            if (!email.value.match(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/)) {
+                document.getElementById('emailError').classList.add('visible');
+                isValid = false;
+            } else {
+                document.getElementById('emailError').classList.remove('visible');
+            }
+
+            // Message validation
+            if (message.value.length < 10) {
+                document.getElementById('messageError').classList.add('visible');
+                isValid = false;
+            } else {
+                document.getElementById('messageError').classList.remove('visible');
+            }
+
+            if (!isValid) {
+                document.getElementById('loadingState').classList.add('hidden');
+                document.getElementById('submitButton').classList.remove('hidden');
+                return;
+            }
+
+            // Submit form
+            fetch('https://formspree.io/f/xwpvqzkw', {
+                method: 'POST',
+                body: new FormData(this),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    document.getElementById('loadingState').classList.add('hidden');
+                    document.getElementById('successMessage').classList.remove('hidden');
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Redirect after 2 seconds
+                    setTimeout(() => {
+                        window.location.href = 'https://fahmyomara.netlify.app/success.html';
+                    }, 2000);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                // Show error message
+                document.getElementById('loadingState').classList.add('hidden');
+                document.getElementById('errorMessage').classList.remove('hidden');
+                document.getElementById('submitButton').classList.remove('hidden');
+                console.error('Error:', error);
+            });
+        });
+
+        // Add input event listeners for real-time validation
+        document.querySelectorAll('.form-field input, .form-field textarea').forEach(input => {
+            input.addEventListener('input', function() {
+                const errorElement = document.getElementById(this.id + 'Error');
+                if (errorElement) {
+                    errorElement.classList.remove('visible');
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for footer links
+        document.querySelectorAll('.footer-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation Active State
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+        window.addEventListener('load', updateActiveNav);
+
+        // Smooth scroll with offset
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const headerOffset = 80;
+                const elementPosition = target.offsetTop;
+                const offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Particle Background
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = window.innerWidth < 768 ? 25 : 50; // Reduce particles on mobile
+            
+            // Clear existing particles
+            particlesContainer.innerHTML = '';
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.animationDelay = `${Math.random() * 15}s`;
+                particle.style.width = `${Math.random() * 3 + 2}px`; // Slightly smaller particles
+                particle.style.height = particle.style.width;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Initialize particles with debounce
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(createParticles, 250);
+        });
+
+        // Initialize particles after page load
+        window.addEventListener('load', () => {
+            createParticles();
+        });
+
+        // Optimize animations for reduced motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (prefersReducedMotion.matches) {
+            document.documentElement.style.setProperty('--animation-duration', '0s');
+            document.documentElement.style.setProperty('--transition-duration', '0s');
+        }
+
+        // Optimize hover effects for touch devices
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        if (isTouchDevice) {
+            document.documentElement.classList.add('touch-device');
+        }
+
+        // Enhanced typing animation
+        const typingText = document.querySelector('.typing-text');
+        const cursor = document.querySelector('.typing-cursor');
+        const text = " Alaa Salhani";
+        let charIndex = 0;
+        let isTyping = false;
+        let typingSpeed = 120; // Slightly slower for better readability
+        let pauseDuration = 800; // Shorter initial pause
+
+        function typeWriter() {
+            if (!isTyping) {
+                isTyping = true;
+                typingText.style.width = '0';
+                typingText.textContent = '';
+                charIndex = 0;
+                cursor.style.opacity = '0.8';
+                
+                // Add initial pause
+                setTimeout(() => {
+                    const type = () => {
+                        if (charIndex < text.length) {
+                            typingText.textContent += text.charAt(charIndex);
+                            typingText.style.width = `${(charIndex + 1) * 100 / text.length}%`;
+                            charIndex++;
+                            setTimeout(type, typingSpeed);
+                        } else {
+                            isTyping = false;
+                            // Keep cursor visible after typing
+                            cursor.style.animation = 'none';
+                            setTimeout(() => {
+                                cursor.style.animation = 'blink 0.7s step-end infinite';
+                            }, 10);
+                        }
+                    };
+                    
+                    type();
+                }, pauseDuration);
+            }
+        }
+
+        // Adjust cursor position after font load
+        document.fonts.ready.then(() => {
+            const textWidth = typingText.offsetWidth;
+            cursor.style.right = `-${textWidth}px`;
+        });
+
+        // Start typing animation when the section is in view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    typeWriter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.querySelector('#home'));
+
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/pagination.js"></script>
+</body>
+</html>
