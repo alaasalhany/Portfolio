@@ -41,7 +41,7 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menuBtn" class="md:hidden text-xl text-slate-100" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+            <button id="menuBtn" class="md:hidden text-xl text-slate-100" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu" onclick="toggleMobileMenu()">
                 <i class="fas fa-bars"></i>
             </button>
             
@@ -67,18 +67,18 @@
                 <div class="hero-content flex-1">
                     <h1 class="text-4xl md:text-5xl font-bold mb-6">
                         Hi, I'm <span class="typing-container">
-                            <span class="gradient-text typing-text"></span>
+                            <span class="typing-text"></span>
                             <span class="typing-cursor"></span>
                         </span>
                     </h1>
                     <p class="text-lg md:text-xl text-slate-400 mb-8">
-                         I’m passionate about web design and data analysis.
+                         I’m passionate about web design and Business analysis.
                     </p>
                     <div class="flex gap-4">
-                        <a href="#contact" class="btn-primary group">
-                            <span>Contact Me</span>
-                            <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
-                        </a>
+                         <a href="ALAA SALHANI_Resume.pdf" target="_blank" class="btn-primary inline-flex items-center gap-2">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                         </a>
                         <a href="#projects" class="btn-secondary group">
                             <span>View Work</span>
                             <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="mt-8 md:mt-0 flex justify-center md:justify-end">
                     <div class="hero-image">
-                        <img src="assets/Home_img.jpg"
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815561/Home_img_e0qtfs.jpg"
                              alt="Profile" 
                              class="rounded-2xl w-full max-w-md border-4 border-slate-800 md:ml-10"
                              data-aos="zoom-in"
@@ -147,7 +147,7 @@
             <div class="relative ml-auto w-full max-w-[600px] transform translate-x-0 md:translate-x-4" data-aos="fade-left" data-aos-delay="400">
                 <div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 blur-3xl rounded-full"></div>
                 <div class="relative bg-gradient-to-br from-primary to-secondary p-1 rounded-2xl transform hover:scale-[1.02] transition-all duration-500 shadow-xl hover:shadow-2xl">
-                    <img src="assets/About _img.jpg"
+                    <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815822/About__img_ltlist.jpg"
                          alt="About" 
                          class="rounded-2xl w-full border-4 border-slate-800/50 transition-transform duration-500"
                          loading="lazy"
@@ -164,11 +164,14 @@
     <section id="projects" class="py-20 px-6 bg-slate-800/50 overflow-hidden">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center gradient-text" data-aos="fade-up">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+
+            <!-- Projects Container with Fixed Height -->
+            <div class="projects-container">
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12" id="projects-grid">
                 <!-- Project 1 -->
                 <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up">
                     <div class="relative overflow-hidden rounded-lg mb-6">
-                        <img src="assets/Forex_Calculator.png"
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815910/Forex_Calculator_ojatuq.png"
                              alt="Project" 
                              class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
                              loading="lazy"
@@ -194,7 +197,7 @@
                 <!-- Project 2 -->
                 <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative overflow-hidden rounded-lg mb-6">
-                        <img src="assets/coffe shop.png"
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815899/coffe_shop_zfgcs1.png"
                              alt="Project" 
                              class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
                              loading="lazy"
@@ -220,7 +223,7 @@
                 <!-- Project 3 -->
                 <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative overflow-hidden rounded-lg mb-6">
-                        <img src="assets/TRAVEL-WEB-SİTE.png"
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815946/TRAVEL-WEB-S%C4%B0TE_myxpxt.png"
                              alt="Project" 
                              class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
                              loading="lazy"
@@ -228,7 +231,7 @@
                              height="450">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3 text-slate-100">Travel Agency=</h3>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-100">Travel Agency</h3>
                     <p class="text-slate-300 mb-6">Modern travel site with trip listings, booking, and smooth user experience.</p>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">HTML</span>
@@ -247,7 +250,7 @@
                 <!-- Project 4 -->
                 <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative overflow-hidden rounded-lg mb-6">
-                        <img src="assets/TravelLikeMe.2pdf.png"
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815933/TravelLikeMe.2pdf_gpe0mg.png"
                              alt="Project" 
                              class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
                              loading="lazy"
@@ -268,7 +271,7 @@
                 <!-- Project 5 -->
                 <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative overflow-hidden rounded-lg mb-6">
-                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1746396631/screely-1740003123790_gk4tcz.png"
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815919/ShoppingTrends_psvxgo.png"
                              alt="Project" 
                              class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
                              loading="lazy"
@@ -277,184 +280,96 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-slate-100">BI-ShopıngTrend </h3>
-                    <p class="text-slate-300 mb-6">Shoes Marketplace With HTML, CSS, and JS</p>
+                    <p class="text-slate-300 mb-6">Power BI dashboard analyzing production downtime to improve efficiency and performance</p>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">HTML</span>
-                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">CSS</span>
-                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">JS</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">Power BI</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">Data Cleaning</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">DAX</span>
                     </div>
-                    <a href="https://fahmyintech.github.io/Nike-shop/" 
+                    <a href="https://github.com/alaasalhany/BI-shoppingTrend.git" 
                        target="_blank" 
                        class="inline-flex items-center btn-primary group-hover:shadow-lg">
                         <span>View Project</span>
                         <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
                     </a>
                 </div>
-            </div>
-             <div class="mt-8 flex justify-center space-x-4" id="project-pagination-buttons" style="display: none;">
-                <button id="prevButton" class="btn-secondary" style="display: none;">⬅ Previous</button>
-                <button id="nextButton" class="btn-secondary" style="display: none;">Next ➡</button>
-            </div>
+                <!-- Project 6 -->
+                <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815891/BuggyReservation_ngh55y.png"
+                             alt="Project" 
+                             class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                             loading="lazy"
+                             width="800"
+                             height="450">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-100">Buggy Reservation App </h3>
+                    <p class="text-slate-300 mb-6">Designed a mobile-friendly booking app and helped revamp the reservation service to enhance customer experience.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">Research & Analysis</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">Customer Experience Improvement</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">Data Planning</span>
+                    </div>
+                    <a href="https://docs.google.com/document/d/1aD_NhHu2LhmxYKORAbo4O9CN9mawNHD1/edit?usp=sharing&ouid=107197525784088914783&rtpof=true&sd=true" 
+                       target="_blank" 
+                       class="inline-flex items-center btn-primary group-hover:shadow-lg">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                <!-- Project 7 -->
+                <div class="group bg-slate-800/80 backdrop-blur-sm rounded-xl p-6 transform transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:bg-slate-700/80 project-item" data-category="web,js" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://res.cloudinary.com/dgqequjgk/image/upload/v1748815883/BI_products_eyy7ts.png"
+                             alt="Project" 
+                             class="w-full h-56 object-cover transform transition-transform duration-500 group-hover:scale-110"
+                             loading="lazy"
+                             width="800"
+                             height="450">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-slate-100">BI-Project  </h3>
+                    <p class="text-slate-300 mb-6">An interactive Power BI dashboard to analyze production downtime and optimize manufacturing performance.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">Power BI</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">DAX</span>
+                        <span class="project-tag px-3 py-1 bg-slate-900/80 rounded-full text-sm font-medium text-primary">Data Visualization</span>
+                    </div>
+                    <a href="https://github.com/alaasalhany/BI-Project.git" 
+                       target="_blank" 
+                       class="inline-flex items-center btn-primary group-hover:shadow-lg">
+                        <span>View Project</span>
+                        <i class="fas fa-arrow-right ml-2 transform transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div> <!-- End projects-grid -->
+
+                <!-- Pagination Buttons - Fixed Position -->
+                <div class="pagination-container">
+                    <div class="flex justify-center items-center space-x-4" id="project-pagination-buttons">
+                        <button id="prevButton" class="btn-secondary">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Previous</span>
+                        </button>
+                        <button id="nextButton" class="btn-secondary">
+                            <span>Next</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div> <!-- End projects-container -->
         </div>
        
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-16 px-6 bg-gradient-to-b from-slate-900 to-slate-800">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">What People Say</h2>
-            
-            <!-- Testimonials Carousel -->
-            <div class="relative">
-                <!-- Navigation Arrows -->
-                <button class="carousel-nav carousel-prev hidden md:block" aria-label="Previous testimonial">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="carousel-nav carousel-next hidden md:block" aria-label="Next testimonial">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-
-                <!-- Carousel Container -->
-                <div class="testimonials-carousel overflow-x-auto snap-x snap-mandatory scrollbar-hide touch-pan-x">
-                    <div class="flex gap-6">
-                        <!-- Testimonial 1 -->
-                        <div class="testimonial-card min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center">
-                            <div class="bg-slate-800/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-700 h-full">
-                                <div class="flex items-start mb-6">
-                                    <div class="relative">
-                                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-2xl">
-                                            JD
-                                        </div>
-                                        <div class="absolute -bottom-1 -right-1 bg-slate-800 rounded-full p-1">
-                                            <i class="fas fa-quote-right text-primary"></i>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h3 class="font-bold text-lg">Omar Khaled</h3>
-                                        <p class="text-sm text-slate-400">Project Manager</p>
-                                    </div>
-                                </div>
-                                <p class="text-slate-300 mb-6 italic">"Fahmy delivered exceptional results. His attention to detail and technical expertise made our project a success."</p>
-                                <div class="flex gap-1 text-primary">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 2 -->
-                        <div class="testimonial-card min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center">
-                            <div class="bg-slate-800/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-700 h-full">
-                                <div class="flex items-start mb-6">
-                                    <div class="relative">
-                                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-2xl">
-                                            AS
-                                        </div>
-                                        <div class="absolute -bottom-1 -right-1 bg-slate-800 rounded-full p-1">
-                                            <i class="fas fa-quote-right text-primary"></i>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h3 class="font-bold text-lg">Layla Hassan</h3>
-                                        <p class="text-sm text-slate-400">Startup Founder</p>
-                                    </div>
-                                </div>
-                                <p class="text-slate-300 mb-6 italic">"Working with Fahmy was a pleasure. He brought our vision to life with modern and clean code."</p>
-                                <div class="flex gap-1 text-primary">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 3 -->
-                        <div class="testimonial-card min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center">
-                            <div class="bg-slate-800/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-700 h-full">
-                                <div class="flex items-start mb-6">
-                                    <div class="relative">
-                                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-2xl">
-                                            MJ
-                                        </div>
-                                        <div class="absolute -bottom-1 -right-1 bg-slate-800 rounded-full p-1">
-                                            <i class="fas fa-quote-right text-primary"></i>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h3 class="font-bold text-lg">Ahmed Zaki</h3>
-                                        <p class="text-sm text-slate-400">Lead Developer</p>
-                                    </div>
-                                </div>
-                                <p class="text-slate-300 mb-6 italic">"Fahmy's code quality and problem-solving skills are impressive. A great addition to any development team."</p>
-                                <div class="flex gap-1 text-primary">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 4 -->
-                        <div class="testimonial-card min-w-[85vw] md:min-w-[45vw] lg:min-w-[30vw] snap-center">
-                            <div class="bg-slate-800/80 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-slate-700 h-full">
-                                <div class="flex items-start mb-6">
-                                    <div class="relative">
-                                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-2xl">
-                                            MJ
-                                        </div>
-                                        <div class="absolute -bottom-1 -right-1 bg-slate-800 rounded-full p-1">
-                                            <i class="fas fa-quote-right text-primary"></i>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h3 class="font-bold text-lg">Sara Mostafa</h3>
-                                        <p class="text-sm text-slate-400">Software Engineer</p>
-                                    </div>
-                                </div>
-                                <p class="text-slate-300 mb-6 italic">"Fahmy's code quality and problem-solving skills are impressive. A great addition to any development team."</p>
-                                <div class="flex gap-1 text-primary">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation Dots -->
-                <div class="flex justify-center mt-8 space-x-2">
-                    <button class="carousel-dot active" aria-label="Go to testimonial 1"></button>
-                    <button class="carousel-dot" aria-label="Go to testimonial 2"></button>
-                    <button class="carousel-dot" aria-label="Go to testimonial 3"></button>
-                    <button class="carousel-dot" aria-label="Go to testimonial 4"></button>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
     <!-- Skills Section -->
     <section id="skills" class="py-16 px-6">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-3xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">Technical Skills</h2>
             
-            <!-- Download Resume Button -->
-            <div class="text-center mb-12" data-aos="fade-up">
-                <a href="assets/ALAA SALHANI_Resume.pdf" target="_blank" class="btn-primary inline-flex items-center gap-2">
-                    <i class="fas fa-download"></i>
-                    Download Resume
-                </a>
-            </div>
-
             <!-- Skills Grid -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- HTML5 -->
@@ -463,39 +378,38 @@
                     <h3 class="font-bold">HTML5</h3>
                     <p class="text-sm text-slate-400 mt-2">Advanced</p>
                 </div>
-                
+
                 <!-- CSS3 -->
                 <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="100">
                     <i class="fab fa-css3-alt text-5xl text-[#1572B6] mb-4 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold">CSS3</h3>
                     <p class="text-sm text-slate-400 mt-2">Advanced</p>
                 </div>
-                
+
                 <!-- JavaScript -->
                 <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="200">
                     <i class="fab fa-js-square text-5xl text-[#F7DF1E] mb-4 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold">JavaScript</h3>
                     <p class="text-sm text-slate-400 mt-2">Advanced</p>
                 </div>
-                
+
                 <!-- SQL -->
                 <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="300">
-                            <i class="fas fa-database text-5xl text-[#00758F] mb-4 group-hover:scale-110 transition-transform"></i>
-
+                    <i class="fas fa-database text-5xl text-[#00758F] mb-4 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold">SQL</h3>
                     <p class="text-sm text-slate-400 mt-2">Learning</p>
                 </div>
-                
+
                 <!-- BI -->
                 <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="400">
-                            <i class="fas fa-chart-line text-5xl text-[#4CAF50] mb-4 group-hover:scale-110 transition-transform"></i>
+                    <i class="fas fa-chart-line text-5xl text-[#4CAF50] mb-4 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold">BI</h3>
                     <p class="text-sm text-slate-400 mt-2">Intermediate</p>
                 </div>
-                <!-- PHP  -->
-                <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="400">
-                            <i class="fab fa-php text-5xl text-[#777BB4] mb-4 group-hover:scale-110 transition-transform"></i>
 
+                <!-- PHP  -->
+                <div class="p-6 bg-slate-800 rounded-xl text-center group hover:bg-slate-700 transition-colors" data-aos="flip-up" data-aos-delay="500">
+                    <i class="fab fa-php text-5xl text-[#777BB4] mb-4 group-hover:scale-110 transition-transform"></i>
                     <h3 class="font-bold">PHP</h3>
                     <p class="text-sm text-slate-400 mt-2">Intermediate</p>
                 </div>
@@ -553,12 +467,12 @@
                     <div class="contact-card rounded-2xl p-8">
                         <h3 class="text-xl font-semibold mb-8 text-primary">Connect With Me</h3>
                         <div class="grid grid-cols-2 gap-4">
-                            <a href="#" target="_blank" 
+                            <a href="https://x.com/home" target="_blank" 
                                class="social-icon rounded-xl p-4 flex items-center justify-center gap-3">
                                 <i class="fab fa-twitter text-xl text-slate-100"></i>
                                 <span class="text-slate-100 font-medium">Twitter</span>
                             </a>
-                            <a href="#" target="_blank" 
+                            <a href="https://www.instagram.com/" target="_blank" 
                                class="social-icon rounded-xl p-4 flex items-center justify-center gap-3">
                                 <i class="fab fa-instagram text-xl text-slate-100"></i>
                                 <span class="text-slate-100 font-medium">Instagram</span>
@@ -580,15 +494,15 @@
                 <!-- Contact Form -->
                 <div class="contact-card rounded-2xl p-8">
                     <h3 class="text-xl font-semibold mb-8 text-primary">Send Me a Message</h3>
-                    <form 
-                        action="https://formspree.io/f/xwpvqzkw" 
+                    <form
+                        action="https://formspree.io/f/xblyjgkz"
                         method="POST"
                         class="space-y-6"
                         id="contactForm"
                     >
-                        <input type="hidden" name="_next" value="https://fahmyomara.netlify.app/success.html">
+                        <input type="hidden" name="_next" value="./success.html">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="New Contact Form Submission">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Alaa Salhani Portfolio">
                         <input type="text" name="_gotcha" style="display: none">
                        
                         <div class="form-field">
@@ -703,15 +617,15 @@
                 <ul class="space-y-2">
                     <li class="flex items-center gap-2">
                         <i class="fas fa-file-pdf text-primary"></i>
-                        <a href="https://fahmyintech.github.io/FahmyPortfolio-/Eng_Fahmy_cv.pdf" target="_blank" class="footer-link text-slate-300 hover:text-primary">Download Resume</a>
+                        <a href="assets/ALAA SALHANI_Resume.pdf" target="_blank" class="footer-link text-slate-300 hover:text-primary">Download Resume</a>
                     </li>
                     <li class="flex items-center gap-2">
                         <i class="fab fa-github text-primary"></i>
-                        <a href="https://github.com/FahmyInTech" target="_blank" class="footer-link text-slate-300 hover:text-primary">GitHub Profile</a>
+                        <a href="https://github.com/alaasalhany" target="_blank" class="footer-link text-slate-300 hover:text-primary">GitHub Profile</a>
                     </li>
                     <li class="flex items-center gap-2">
                         <i class="fab fa-linkedin text-primary"></i>
-                        <a href="https://www.linkedin.com/in/fahmy-omara" target="_blank" class="footer-link text-slate-300 hover:text-primary">LinkedIn Profile</a>
+                        <a href="http://www.linkedin.com/in/alaa-salhany-781b0723b" target="_blank" class="footer-link text-slate-300 hover:text-primary">LinkedIn Profile</a>
                     </li>
                     <li class="flex items-center gap-2">
                         <i class="fas fa-code text-primary"></i>
@@ -749,15 +663,7 @@
             </div>
         </div>
 
-        <div class="border-t border-slate-700 pt-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-slate-400 text-sm">&copy; 2025 Fahmy Omara. All rights reserved.</p>
-                <div class="flex gap-4 text-sm">
-                    <a href="#" class="footer-link text-slate-400 hover:text-primary">Privacy Policy</a>
-                    <a href="#" class="footer-link text-slate-400 hover:text-primary">Terms of Service</a>
-                </div>
-            </div>
-        </div>
+       
     </div>
 </footer>
 
@@ -767,18 +673,21 @@
     </button>
 
     <!-- Required Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Initialize AOS with optimized settings
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                offset: 120,
-                once: true,
-                disable: 'mobile'
-            });
+        // Wait for AOS to load before initializing
+        window.addEventListener('load', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    offset: 120,
+                    once: true,
+                    disable: false
+                });
+                console.log('AOS initialized from HTML');
+            }
         });
 
         // Mobile Menu Toggle
@@ -842,209 +751,9 @@
             });
         });
 
-        // Testimonials Carousel
-        const carousel = document.querySelector('.testimonials-carousel');
-        const dots = document.querySelectorAll('.carousel-dot');
-        const prevBtn = document.querySelector('.carousel-prev');
-        const nextBtn = document.querySelector('.carousel-next');
-        let currentIndex = 0;
-        let autoScrollInterval;
-        let isHovering = false;
+        // Form handling is now managed in main.js for better performance
 
-        function updateCarousel() {
-            const cardWidth = carousel.querySelector('.testimonial-card').offsetWidth;
-            carousel.scrollTo({
-                left: currentIndex * cardWidth,
-                behavior: 'smooth'
-            });
-
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
-        }
-
-        function startAutoScroll() {
-            if (!isHovering) {
-                autoScrollInterval = setInterval(() => {
-                    currentIndex = (currentIndex + 1) % dots.length;
-                    updateCarousel();
-                }, 5000);
-            }
-        }
-
-        function stopAutoScroll() {
-            clearInterval(autoScrollInterval);
-        }
-
-        // Handle dot clicks
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentIndex = index;
-                updateCarousel();
-            });
-        });
-
-        // Handle arrow clicks
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + dots.length) % dots.length;
-            updateCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % dots.length;
-            updateCarousel();
-        });
-
-        // Handle hover states
-        carousel.addEventListener('mouseenter', () => {
-            isHovering = true;
-            stopAutoScroll();
-        });
-
-        carousel.addEventListener('mouseleave', () => {
-            isHovering = false;
-            startAutoScroll();
-        });
-
-        // Handle touch events
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        carousel.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-            stopAutoScroll();
-        });
-
-        carousel.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-            startAutoScroll();
-        });
-
-        function handleSwipe() {
-            const swipeThreshold = 50;
-            const diff = touchStartX - touchEndX;
-
-            if (Math.abs(diff) > swipeThreshold) {
-                if (diff > 0) {
-                    // Swipe left
-                    currentIndex = (currentIndex + 1) % dots.length;
-                } else {
-                    // Swipe right
-                    currentIndex = (currentIndex - 1 + dots.length) % dots.length;
-                }
-                updateCarousel();
-            }
-        }
-
-        // Start auto-scroll
-        startAutoScroll();
-
-        // Form validation and submission handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Show loading state
-            document.getElementById('loadingState').classList.remove('hidden');
-            document.getElementById('submitButton').classList.add('hidden');
-            
-            // Validate form
-            const name = document.getElementById('name');
-            const email = document.getElementById('email');
-            const message = document.getElementById('message');
-            let isValid = true;
-
-            // Name validation
-            if (!name.value.match(/^[A-Za-z\s]+$/)) {
-                document.getElementById('nameError').classList.add('visible');
-                isValid = false;
-            } else {
-                document.getElementById('nameError').classList.remove('visible');
-            }
-
-            // Email validation
-            if (!email.value.match(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/)) {
-                document.getElementById('emailError').classList.add('visible');
-                isValid = false;
-            } else {
-                document.getElementById('emailError').classList.remove('visible');
-            }
-
-            // Message validation
-            if (message.value.length < 10) {
-                document.getElementById('messageError').classList.add('visible');
-                isValid = false;
-            } else {
-                document.getElementById('messageError').classList.remove('visible');
-            }
-
-            if (!isValid) {
-                document.getElementById('loadingState').classList.add('hidden');
-                document.getElementById('submitButton').classList.remove('hidden');
-                return;
-            }
-
-            // Submit form
-            fetch('https://formspree.io/f/xwpvqzkw', {
-                method: 'POST',
-                body: new FormData(this),
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Show success message
-                    document.getElementById('loadingState').classList.add('hidden');
-                    document.getElementById('successMessage').classList.remove('hidden');
-                    
-                    // Reset form
-                    this.reset();
-                    
-                    // Redirect after 2 seconds
-                    setTimeout(() => {
-                        window.location.href = 'https://fahmyomara.netlify.app/success.html';
-                    }, 2000);
-                } else {
-                    throw new Error('Network response was not ok');
-                }
-            })
-            .catch(error => {
-                // Show error message
-                document.getElementById('loadingState').classList.add('hidden');
-                document.getElementById('errorMessage').classList.remove('hidden');
-                document.getElementById('submitButton').classList.remove('hidden');
-                console.error('Error:', error);
-            });
-        });
-
-        // Add input event listeners for real-time validation
-        document.querySelectorAll('.form-field input, .form-field textarea').forEach(input => {
-            input.addEventListener('input', function() {
-                const errorElement = document.getElementById(this.id + 'Error');
-                if (errorElement) {
-                    errorElement.classList.remove('visible');
-                }
-            });
-        });
-
-        // Back to Top Button
-        const backToTopButton = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
-            }
-        });
-
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
+        // Back to top functionality is now handled in main.js
 
         // Smooth scroll for footer links
         document.querySelectorAll('.footer-link').forEach(link => {
@@ -1060,30 +769,7 @@
             });
         });
 
-        // Navigation Active State
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        function updateActiveNav() {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        }
-
-        window.addEventListener('scroll', updateActiveNav);
-        window.addEventListener('load', updateActiveNav);
+        // Navigation active state is now handled in main.js
 
         // Smooth scroll with offset
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1101,37 +787,7 @@
             });
         });
 
-        // Particle Background
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particleCount = window.innerWidth < 768 ? 25 : 50; // Reduce particles on mobile
-            
-            // Clear existing particles
-            particlesContainer.innerHTML = '';
-            
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = `${Math.random() * 100}%`;
-                particle.style.top = `${Math.random() * 100}%`;
-                particle.style.animationDelay = `${Math.random() * 15}s`;
-                particle.style.width = `${Math.random() * 3 + 2}px`; // Slightly smaller particles
-                particle.style.height = particle.style.width;
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        // Initialize particles with debounce
-        let resizeTimeout;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(createParticles, 250);
-        });
-
-        // Initialize particles after page load
-        window.addEventListener('load', () => {
-            createParticles();
-        });
+        // Particle background is now handled in main.js
 
         // Optimize animations for reduced motion
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -1146,63 +802,7 @@
             document.documentElement.classList.add('touch-device');
         }
 
-        // Enhanced typing animation
-        const typingText = document.querySelector('.typing-text');
-        const cursor = document.querySelector('.typing-cursor');
-        const text = " Alaa Salhani";
-        let charIndex = 0;
-        let isTyping = false;
-        let typingSpeed = 120; // Slightly slower for better readability
-        let pauseDuration = 800; // Shorter initial pause
-
-        function typeWriter() {
-            if (!isTyping) {
-                isTyping = true;
-                typingText.style.width = '0';
-                typingText.textContent = '';
-                charIndex = 0;
-                cursor.style.opacity = '0.8';
-                
-                // Add initial pause
-                setTimeout(() => {
-                    const type = () => {
-                        if (charIndex < text.length) {
-                            typingText.textContent += text.charAt(charIndex);
-                            typingText.style.width = `${(charIndex + 1) * 100 / text.length}%`;
-                            charIndex++;
-                            setTimeout(type, typingSpeed);
-                        } else {
-                            isTyping = false;
-                            // Keep cursor visible after typing
-                            cursor.style.animation = 'none';
-                            setTimeout(() => {
-                                cursor.style.animation = 'blink 0.7s step-end infinite';
-                            }, 10);
-                        }
-                    };
-                    
-                    type();
-                }, pauseDuration);
-            }
-        }
-
-        // Adjust cursor position after font load
-        document.fonts.ready.then(() => {
-            const textWidth = typingText.offsetWidth;
-            cursor.style.right = `-${textWidth}px`;
-        });
-
-        // Start typing animation when the section is in view
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    typeWriter();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        observer.observe(document.querySelector('#home'));
+        // Typing animation is handled in main.js
 
         // Service Worker Registration
         if ('serviceWorker' in navigator) {
@@ -1217,7 +817,7 @@
             });
         }
     </script>
-    <script src="js/main.js"></script>
-    <script src="js/pagination.js"></script>
+    <script src="main.js"></script>
+    <script src="pagination.js"></script>
 </body>
 </html>
